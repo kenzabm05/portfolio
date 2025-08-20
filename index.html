@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mon portfolio - projets, compétences et contact">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#accueil" aria-label="Accueil">Mon Portfolio</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container">
+        <h1>Bonjour, je suis <span class="accent">Votre Nom</span></h1>
+        <p class="lead">Développeur front‑end. Voici une sélection de mes projets récents.</p>
+        <div class="cta-row">
+          <a href="#projets" class="btn">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="a-propos" class="section about">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Passionné par le web, j’aime concevoir des interfaces performantes, accessibles et élégantes. Je maîtrise HTML, CSS (Flexbox, Grid) et JavaScript.</p>
+      </div>
+    </section>
+
+    <section id="projets" class="section projects">
+      <div class="container">
+        <h2>Projets</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media placeholder" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Projet 1</h3>
+              <p>Brève description du projet, la stack utilisée et les objectifs.</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Démo</a>
+                <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media placeholder" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Projet 2</h3>
+              <p>Brève description du projet, la stack utilisée et les objectifs.</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Démo</a>
+                <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media placeholder" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Projet 3</h3>
+              <p>Brève description du projet, la stack utilisée et les objectifs.</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Démo</a>
+                <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mon Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
